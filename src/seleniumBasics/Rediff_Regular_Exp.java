@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Rediff_Regular_Exp {
 
 	public static void main(String[] args) {
-	System.setProperty("webdriver.chrome.driver", "D:\\A_CHITTARANJAN_DOMAIN\\Software\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	driver.get("http://www.rediff.com/"); 
 	driver.manage().window().maximize();
@@ -18,6 +19,11 @@ public class Rediff_Regular_Exp {
 	//it can be input#passowrd (tagname#id) or #password (#id)
     driver.findElement(By.xpath("//input[contains(@name,'procee')]")).click();
     //Using regular expression in xpath	
+    
+    System.out.println("getCurrentUrl() - "+driver.getCurrentUrl());
+    System.out.println("getTitle() - "+driver.getTitle());
+    System.out.println("getWindowHandle() - "+driver.getWindowHandle());
+    System.out.println("getPageSource()"+driver.getPageSource());
     driver.close();
 	}
 }

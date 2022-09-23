@@ -21,7 +21,7 @@ public class Auto_Suggestion_Dropdown {
 		// wait for 7 sec.
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath(".//*[@id='m_rtxtEmail1']")).sendKeys("chit");
-		wd.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='m_frmRegister']/div[1]/ul")));
+		//wd.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='m_frmRegister']/div[1]/ul")));
 		// in above it waits for auto suggestion & below it clicks on one of them
 		driver.findElement(By.xpath(".//*[@id='m_frmRegister']/div[1]/ul/li[2]/p")).click();
 

@@ -1,4 +1,4 @@
-package seleniumAdvTopics;
+/*package seleniumAdvTopics;
 
 import java.util.concurrent.TimeUnit;
 
@@ -52,3 +52,4 @@ public class ExplicitWait {
 		// condition.
 	}
 }
+*/

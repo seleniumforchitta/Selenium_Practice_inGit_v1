@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/selenium-java-3.141.59/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/commons-io-2.7_For_FileHandling/commons-io-2.7.jar"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/commons-io-2.7_For_FileHandling/commons-io-2.7-javadoc.jar"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/commons-io-2.7_For_FileHandling/commons-io-2.7-sources.jar"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/commons-io-2.7_For_FileHandling/commons-io-2.7-tests.jar"/>
-	<classpathentry kind="lib" path="D:/A_CHITTARANJAN_DOMAIN/Software/commons-io-2.7_For_FileHandling/commons-io-2.7-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/selenium-java-3.141.59/commons-io-2.7-bin.zip"/>
+	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/selenium-java-3.141.59/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

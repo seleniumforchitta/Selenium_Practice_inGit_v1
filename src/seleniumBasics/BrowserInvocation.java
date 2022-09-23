@@ -6,7 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BrowserInvocation {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Selenium !!!");
-		System.setProperty("webdriver.chrome.driver", "D:\\A_CHITTARANJAN_DOMAIN\\Software\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		System.out.println(driver.getTitle()); //it will give the title
