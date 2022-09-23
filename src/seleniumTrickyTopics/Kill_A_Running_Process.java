@@ -9,7 +9,7 @@ public class Kill_A_Running_Process {
 
 	public static void main(String[] args) throws IOException {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\A_CHITTARANJAN_DOMAIN\\Software\\chromedriver_win32\\chromedriver.exe");
+				"C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

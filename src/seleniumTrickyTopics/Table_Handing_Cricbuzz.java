@@ -10,7 +10,7 @@ public class Table_Handing_Cricbuzz {
 	public static void main(String[] args) {
 		int sum = 0;
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\A_CHITTARANJAN_DOMAIN\\Software\\chromedriver_win32\\chromedriver.exe");
+				"C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(
 				"http://www.cricbuzz.com/live-cricket-scorecard/17695/aus-vs-eng-3rd-odi-england-tour-of-australia-2018");

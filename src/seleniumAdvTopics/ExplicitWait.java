@@ -1,4 +1,4 @@
-/*package seleniumAdvTopics;
+package seleniumAdvTopics;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +12,7 @@ public class ExplicitWait {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\A_CHITTARANJAN_DOMAIN\\Software\\chromedriver_win32\\chromedriver.exe");
+				"C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.makemytrip.com/");
 		driver.manage().window().maximize();
@@ -52,4 +52,4 @@ public class ExplicitWait {
 		// condition.
 	}
 }
-*/
+

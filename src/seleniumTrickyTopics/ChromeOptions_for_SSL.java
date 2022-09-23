@@ -27,7 +27,7 @@ public class ChromeOptions_for_SSL {
 		// chromeoptions belongs to our own local chrome browser
 		c.merge(ch);
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\A_CHITTARANJAN_DOMAIN\\Software\\chromedriver_win32\\chromedriver.exe");
+				"C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(c);
 		driver.get("google.com");
 	}
