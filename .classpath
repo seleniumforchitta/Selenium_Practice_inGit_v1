@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/selenium-java-3.141.59/commons-io-2.7-bin.zip"/>
 	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/selenium-java-3.141.59/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/CHITTARANJAN _SWAIN_D_Drive/STUDY/Software/Selenium_Jars/selenium-server-4.4.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
