@@ -10,8 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CountOfHyperLinks {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\WebDrivers\\chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.ebay.com/");
 		driver.manage().window().maximize();
@@ -33,12 +33,12 @@ public class CountOfHyperLinks {
 		// Now we want to print all the links of 2nd column
 		String beforeClicking = null;
 		String afterClicking;
-		System.out.println("Print ing all the links of 2nd column below !!! ");
+		System.out.println("Printing all the links of 2nd column below !!! ");
 		for (int i = 0; i < footer_col2.findElements(By.tagName("a")).size(); i++) {
 			System.out.println(footer_col2.findElements(By.tagName("a")).get(i).getText());
 			// Now I need to click on the "Site map" link present in the 2nd column
 			// Suppose the "Site map" link is dynamic , it changes it's place everyday
-			if (footer_col2.findElements(By.tagName("a")).get(i).getText().contains("Site map")) {
+			if (footer_col2.findElements(By.tagName("a")).get(i).getText().contains("Affiliates")) {
 				// checking what is the link title before clicking
 				System.out.print("Title of main page : ");
 				System.out.println(driver.getTitle());
@@ -54,15 +54,17 @@ public class CountOfHyperLinks {
 		afterClicking = driver.getTitle();
 		// Now compare the old and new page titles
 		if (beforeClicking != afterClicking) {
-			boolean abc = driver.findElement(By.xpath("html/body/div[2]/div[1]/h1")).isDisplayed();
+			boolean abc = driver.findElement(By.xpath("//a[@class='Header__Logo']/img")).isDisplayed();
 			if (abc == true) {
-				System.out.print("Text present in SiteMap page is : ");
-				System.out.println(driver.findElement(By.xpath("html/body/div[2]/div[1]/h1")).getText());
+				System.out.print("Text present in Affiliates page is : ");
+				System.out.println(driver.findElement(By.xpath("//a[@class='Header__Logo']/img")).getText());
 				System.out.println("Test case is PASS !!!");
 			}
 		} else {
 			System.out.println("Test case is FAIL !!!");
 		}
+		
+		driver.quit();
 
 	}
 }
