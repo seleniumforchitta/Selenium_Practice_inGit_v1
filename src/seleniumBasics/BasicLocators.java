@@ -18,6 +18,5 @@ public class BasicLocators {
 		System.out.println(ErrorMsg);
 		System.out.println(ErrorMsg.equals("The password that you've entered is incorrect. Forgotten password?"));
 		driver.close();
-	
 	}
 }

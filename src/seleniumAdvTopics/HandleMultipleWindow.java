@@ -11,14 +11,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class HandleMultipleWindow {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\CHITTARANJAN _SWAIN_D_Drive\\STUDY\\Software\\WebDrivers\\chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://accounts.google.com/SignUp");
+		driver.get("https://www.naukri.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.xpath(".//*[@id='wrapper']/div[2]/div/div[1]/p/a")).click();
 		System.out.println("Before switching to child !!!");
+		driver.findElement(By.xpath("//a[@title='Naukri FastForward- Resume Services']")).click();
 		System.out.println(driver.getTitle());
 		// In above line it will give the title of parent window
 		// Now we need to get the title of child window
@@ -30,6 +30,8 @@ public class HandleMultipleWindow {
 		Iterator<String> it = ids.iterator();
 		String parentID = it.next();
 		String childID = it.next();// it will take to the child window
+		System.out.println(driver.getTitle());
+		System.out.println("Before switching to child !!!");
 		driver.switchTo().window(childID); // it will switch to the window depending on the ID
 		// > that is passed to the window()
 		System.out.println("After switching to child !!!");
@@ -39,5 +41,9 @@ public class HandleMultipleWindow {
 		driver.switchTo().window(parentID);
 		System.out.println("After switching back to parent again !!!");
 		System.out.println(driver.getTitle());// it will print the parent title
+		driver.switchTo().window(childID);
+		System.out.println("After switching to child !!!");
+		System.out.println(driver.getTitle());
+		driver.quit();
 	}
 }
